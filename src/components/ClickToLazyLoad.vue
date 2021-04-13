@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="load">Lazy Load {{ cutNameIfNeeded() }} </button>
+    <button @click="load">Lazy Load {{ cutNameIfNeeded() }}</button>
     <component v-if="show" :is="lazyLoad" />
   </div>
 </template>
